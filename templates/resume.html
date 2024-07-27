@@ -55,7 +55,7 @@
 <body>
     <div class="container" style="margin-top:20px;background:#013a5c;color:white;"">
 
-        <h1 class="text center">Resume Screening AI base System</h1>
+        <h1 class="text center">Resume Screening NLP base System</h1>
         <p>This system supports TXT and PDF files, to be uploaded and it will work on the following....</p>
         <ul>
             <!-- <li>Resume Categorization</li> -->
@@ -77,11 +77,10 @@
         <p class="text-center">{{message}}</p>
         {% endif %}
 
-        {% if predicted_category %}
         <br>
         <hr>
         <br>
-        <p class="text-center"><b><strong>Category:</strong></b> {{predicted_category}}</p>
+        <!-- <p class="text-center"><b><strong>Category:</strong></b> {{predicted_category}}</p> -->
         <p class="text-center"><b><strong>Recommended Job:</strong></b> {{recommended_job}}</p>
         <br>
         <hr>
@@ -111,19 +110,10 @@
         <br>
         {% endif %}
         {% endif %}
-        {% endif %}
 <!-- 
         {% if predict %}
         <h2>Category : {{ predict }}</h2>
         {% endif %} -->
-        
-        {% if recommendation %}
-        <h2>Job Recommendation : {{ recommendation }}</h2>
-        {% endif %}
-
-        {% if text %}
-        <p>{{ text }}</p>
-        {% endif %}
 
     </div>
 
